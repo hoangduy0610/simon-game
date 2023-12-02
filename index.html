@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 style="margin-top: 20px">Simon Game</h1>
+    <h2 style="margin-top: 20px">Repeat the sequence of colors</h2>
+    <h3 style="margin-top: 20px; margin-bottom: 20px;">Level: <span id="level">1</span></h3>
+    <div id="game-container">
+        <div class="btn" id="green" onclick="handleClick('green')"></div>
+        <div class="btn" id="red" onclick="handleClick('red')"></div>
+        <div class="btn" id="yellow" onclick="handleClick('yellow')"></div>
+        <div class="btn" id="blue" onclick="handleClick('blue')"></div>
+        <button id="start-btn" onclick="startGame()">Start Game</button>
+    </div>
+
+    <script src="simon.js"></script>
+</body>
+
+</html>
